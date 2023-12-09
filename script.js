@@ -17,3 +17,22 @@ function change(addClass, removeClass2, removeClass3) {
 change(btn1, btn2, btn3);
 change(btn2, btn1, btn3);
 change(btn3, btn2, btn1);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.getElementById("back-to-top");
+ 
+  // Показать/скрыть кнопку при прокрутке страницы
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset &gt; 300) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+ 
+  // Плавная прокрутка при клике на кнопку
+  backToTop.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
