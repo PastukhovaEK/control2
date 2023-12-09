@@ -258,22 +258,22 @@
     transform: scale(1.1)
 }
 
-.myBtn {
-    display: none; /* Скрываем кнопку изначально */
-    position: fixed; /* Фиксированная позиция, чтобы кнопка появлялась на экране при прокрутке */
-    bottom: 20px; /* Отступ от нижнего края */
-    right: 30px; /* Отступ от правого края */
-    z-index: 99; /* Значение z-index, чтобы кнопка отображалась выше других элементов */
-    border: none; /* Убираем границы у кнопки */
-    outline: none; /* Убираем рамку фокуса при клике на кнопку */
-    background-color: #e8badc; /* Цвет фона кнопки */
-    color: white; /* Цвет текста на кнопке */
-    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
-    padding: 15px; /* Отступы вокруг текста на кнопке */
-    border-radius: 10px; /* Закругляем углы кнопки */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  background: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
 }
-
-.myBtn:hover {
-    background-color: #eeb4df; /* Изменяем цвет фона при наведении на кнопку */
+ 
+.back-to-top:hover {
+  background: #333;
+  text-decoration: none;
 }
 
